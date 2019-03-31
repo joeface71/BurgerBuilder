@@ -5,9 +5,12 @@ import Aux from "../../../hoc/Auxillary/Auxillary";
 import Backdrop from "../Backdrop/Backdrop";
 
 class Modal extends React.Component {
-    //Check to see if modal needs to be updated.  Also controls the order summary rerender (wrapped by modal)
-    shouldComponentUpdate(nextProps, nextState) {
-    return nextProps.show !== this.props.show;
+  //Check to see if modal needs to be updated.  Also controls the order summary rerender (wrapped by modal)
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      nextProps.show !== this.props.show ||
+      nextProps.children !== this.props.children
+    );
   }
 
   componentWillUpdate() {
