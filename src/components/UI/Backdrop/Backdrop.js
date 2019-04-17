@@ -6,4 +6,4 @@ const backdrop = (props) => (
     props.show ? <div className={classes.Backdrop} onClick={props.clicked}></div> : null
 );
 
-export default backdrop; //called in SideDrawer
+export default backdrop;

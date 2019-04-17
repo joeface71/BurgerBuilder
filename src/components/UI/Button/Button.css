@@ -17,7 +17,7 @@
 
 .Button:disabled {
     color: #ccc;
-    cursor: not-allowed
+    cursor: not-allowed;
 }
 
 .Success {
